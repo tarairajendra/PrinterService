@@ -21,4 +21,25 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/printButton"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List devices"
+        android:onClick="list"
+        android:id="@+id/listDevices"
+        android:layout_below="@+id/printButton"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paired devices:"
+        android:textSize="16dp"
+        android:id="@+id/pairedDevices"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/pairedDevices"/>
+
 </RelativeLayout>
